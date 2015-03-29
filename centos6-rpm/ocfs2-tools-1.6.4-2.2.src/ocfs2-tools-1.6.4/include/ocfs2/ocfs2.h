@@ -136,6 +136,9 @@
 #define OCFS2_QF_INFO_DIRTY 1
 #define OCFS2_QF_INFO_LOADED 2
 
+
+typedef unsigned short umode_t;
+
 typedef void (*ocfs2_chb_notify)(int state, char *progress, void *data);
 
 typedef struct _ocfs2_filesys ocfs2_filesys;

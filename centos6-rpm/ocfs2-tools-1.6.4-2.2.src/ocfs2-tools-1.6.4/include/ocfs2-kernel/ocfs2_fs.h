@@ -29,6 +29,9 @@
 #define OCFS2_MAJOR_REV_LEVEL		0
 #define OCFS2_MINOR_REV_LEVEL          	90
 
+
+typedef unsigned short umode_t;
+
 /*
  * An OCFS2 volume starts this way:
  * Sector 0: Valid ocfs1_vol_disk_hdr that cleanly fails to mount OCFS.
