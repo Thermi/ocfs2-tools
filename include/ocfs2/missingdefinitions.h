@@ -1,4 +1,4 @@
 #ifndef MISSINGDEFS
 #define MISSINGDEFS
-	typedef unsigned short umode_t
+	typedef unsigned short umode_t;
 #endif
