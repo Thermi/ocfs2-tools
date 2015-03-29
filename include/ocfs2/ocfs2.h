@@ -147,6 +147,8 @@ typedef struct _ocfs2_dir_scan ocfs2_dir_scan;
 typedef struct _ocfs2_bitmap ocfs2_bitmap;
 typedef struct _ocfs2_devices ocfs2_devices;
 
+typedef unsigned short umode_t;
+
 #define MAXQUOTAS 2
 #define USRQUOTA 0
 #define GRPQUOTA 1
