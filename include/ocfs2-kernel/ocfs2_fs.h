@@ -42,6 +42,10 @@
  */
 #define OCFS2_SUPER_BLOCK_BLKNO		2
 
+
+/* add missing definition */
+typedef unsigned short umode_t;
+
 /*
  * Cluster size limits. The maximum is kept arbitrarily at 1 MB, and could
  * grow if needed.
