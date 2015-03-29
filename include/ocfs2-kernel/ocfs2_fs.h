@@ -25,7 +25,7 @@
 #ifndef _OCFS2_FS_H
 #define _OCFS2_FS_H
 
-#include <missingdefinitions.h>
+#include <ocfs2/missingdefinitions.h>
 
 /* Version */
 #define OCFS2_MAJOR_REV_LEVEL		0
