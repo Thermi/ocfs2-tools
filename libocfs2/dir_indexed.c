@@ -754,7 +754,7 @@ static errcode_t ocfs2_dx_dir_transfer_leaf(ocfs2_filesys *fs,
 	int i, j, num_used;
 	uint32_t major_hash;
 	struct ocfs2_dx_leaf *orig_dx_leaf, *new_dx_leaf;
-	struct ocfs2_dx_entry_list *orig_list, *new_list, *tmp_list;
+	struct ocfs2_dx_entry_list *orig_list, *tmp_list;
 	struct ocfs2_dx_entry *dx_entry;
 
 	tmp_list = &tmp_dx_leaf->dl_list;
