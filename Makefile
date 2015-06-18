@@ -34,24 +34,6 @@ PKGCONFIG_SOURCES =	\
 	ocfs2.pc.in
 PKGCONFIG_FILES = $(patsubst %.pc.in,%.pc,$(PKGCONFIG_SOURCES))
 
-DEBIAN_FILES =					\
-	debian/README.Debian			\
-	debian/changelog			\
-	debian/compat				\
-	debian/control				\
-	debian/copyright			\
-	debian/ocfs2-tools.config		\
-	debian/ocfs2-tools.docs			\
-	debian/ocfs2-tools.install		\
-	debian/ocfs2-tools.manpages		\
-	debian/ocfs2-tools.postinst		\
-	debian/ocfs2-tools.postrm		\
-	debian/ocfs2-tools.templates		\
-	debian/ocfs2console.install		\
-	debian/ocfs2console.manpages		\
-	debian/ocfs2-tools-static-dev.install	\
-	debian/rules
-
 DIST_FILES = \
 	COPYING					\
 	CREDITS					\
@@ -81,8 +63,7 @@ DIST_FILES = \
 	documentation/ocfs2_faq.txt		\
 	documentation/users_guide.txt		\
 	documentation/samples/cluster.conf	\
-	$(PKGCONFIG_SOURCES)			\
-	$(DEBIAN_FILES)
+	$(PKGCONFIG_SOURCES)			
 
 DIST_RULES = dist-subdircreate
 
@@ -90,7 +71,6 @@ DIST_RULES = dist-subdircreate
 
 dist-subdircreate:
 	$(TOPDIR)/mkinstalldirs $(DIST_DIR)/documentation/samples
-	$(TOPDIR)/mkinstalldirs $(DIST_DIR)/debian
 
 dist-bye:
 	-rm -rf $(DIST_TOPDIR)
