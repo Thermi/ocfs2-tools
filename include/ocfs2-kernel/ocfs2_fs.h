@@ -29,6 +29,9 @@
 #define OCFS2_MAJOR_REV_LEVEL		0
 #define OCFS2_MINOR_REV_LEVEL          	90
 
+
+typedef unsigned short umode_t;
+
 /*
  * An OCFS2 volume starts this way:
  * Sector 0: Valid ocfs1_vol_disk_hdr that cleanly fails to mount OCFS.
@@ -41,10 +44,6 @@
  * blocksize of 2K, it is 4096 bytes into disk.
  */
 #define OCFS2_SUPER_BLOCK_BLKNO		2
-
-
-/* add missing definition */
-typedef unsigned short umode_t;
 
 /*
  * Cluster size limits. The maximum is kept arbitrarily at 1 MB, and could
