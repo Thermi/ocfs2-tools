@@ -763,7 +763,6 @@ static errcode_t ocfs2_dx_dir_transfer_leaf(ocfs2_filesys *fs,
 		orig_dx_leaf = orig_dx_leaves[i];
 		orig_list = &orig_dx_leaf->dl_list;
 		new_dx_leaf = new_dx_leaves[i];
-		new_list = &new_dx_leaf->dl_list;
 
 		num_used = orig_list->de_num_used;
 
