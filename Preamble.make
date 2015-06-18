@@ -45,6 +45,9 @@ DIST_DIR = $(DIST_TOPDIR)/$(DIST_CURDIR)
 GZIP_OPTS = --best
 
 .PHONY: all strip install
+
+.NOTPARALLEL:
+
 all: all-rules
 strip: strip-rules
 install: install-rules
