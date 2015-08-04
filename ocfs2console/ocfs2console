@@ -1,4 +1,4 @@
-#!/usr/bin/python -W ignore::DeprecationWarning
+#!/bin/python2 -W ignore::DeprecationWarning
 
 from ocfs2interface.about import process_args
 nodeconf = process_args()
